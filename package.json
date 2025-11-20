@@ -1,0 +1,21 @@
+{
+  "name": "gct-chat-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo for production-ready chat app (web, server, shared, e2e)",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "e2e"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter ./apps/web dev & pnpm --filter ./apps/server dev",
+    "test": "pnpm -r test",
+    "e2e": "pnpm --filter ./e2e test",
+    "db:migrate": "pnpm --filter ./apps/server db:migrate",
+    "db:seed": "pnpm --filter ./apps/server db:seed"
+  },
+  "devDependencies": {
+    "lint-staged": "^15.5.2"
+  }
+}
