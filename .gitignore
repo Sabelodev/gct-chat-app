@@ -1,0 +1,58 @@
+# Node
+node_modules/
+
+# Build output
+/dist/
+/apps/*/dist/
+/packages/*/dist/
+/e2e/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Env files
+.env
+.env.*
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Prisma
+prisma/migrations/
+prisma/dev.db
+
+# Docker
+*.local
+*.pid
+*.seed
+
+# Playwright
+/e2e/test-results/
+/e2e/.playwright/
+
+# Husky
+.husky/_/
+
+# Coverage
+coverage/
+
+# Misc
+*.tgz
+
+# Tailwind JIT
+*.css.d.ts
+
+# TypeScript
+*.tsbuildinfo
